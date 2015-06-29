@@ -4,7 +4,7 @@
 #   mkfilesys.sh -- make a user specific file system
 #
 # Usage:
-#   mkfilesys.sh directory_name | [-h]
+#   mkfilesys.sh DIRECTORY_NAME | [-h]
 #
 # Description:
 #   The mkfilesys script makes a user specific file system tree.
@@ -26,11 +26,10 @@ multimedia/{pictures,videos},\
 projects/{yyyy-topic-location,code-proj-name},\
 software,\
 tmp,\
-documents/\
-{learning/{books,courses/yyyy-mm-dd-topic-source,docs,papers,presentations,tutorials/yyyy-mm-dd-topic-source},\
+learning/{books,courses/yyyy-mm-dd-topic-source,docs,papers,tutorials/yyyy-mm-dd-topic-source},\
 groups/{scientific-computing-group,software-carpentry},\
 me/{code-snippets,docs,notes,papers,playground,presentations,templates},\
-work/{admin,conferences/yyyy-mm-dd-topic-name-location,docs,human-resources,meetings/yyyy-mm-dd-topic-location,people,training/yyyy-mm-dd-topic-name-location}}\
+work/{admin,conferences/yyyy-mm-dd-topic-name-location,docs,human-resources,meetings/yyyy-mm-dd-topic-location,people,training/yyyy-mm-dd-topic-name-location}\
 }
 
 }
@@ -38,7 +37,7 @@ work/{admin,conferences/yyyy-mm-dd-topic-name-location,docs,human-resources,meet
 # show how to use this script
 usage()
 {
-    echo "usage: $0 directory_name | [-h | --help]"
+    echo "usage: $0 DIRECTORY_NAME | [-h | --help]"
 }
 
 # check arguments - if no arguments, then display help; elif help flags, then display help; else make directories 
