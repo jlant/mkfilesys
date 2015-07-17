@@ -18,17 +18,15 @@ mk_dirs()
 
 mkdir -p $1/\
 {\
-archive,\
 bin,\
 data/{yyyy-mm-dd-topic-source,samples},\
-inbox,\
 multimedia/{pictures,videos},\
 projects/{yyyy-topic-location,code-proj-name},\
 software,\
 tmp,\
 learning/{books,courses/yyyy-mm-dd-topic-source,docs,papers,tutorials/yyyy-mm-dd-topic-source},\
 groups/{scientific-computing-group,software-carpentry},\
-me/{code-snippets,docs,notes,papers,playground,presentations,templates},\
+me/{docs,notes,papers,playground,presentations},\
 work/{admin,conferences/yyyy-mm-dd-topic-name-location,docs,human-resources,meetings/yyyy-mm-dd-topic-location,people,training/yyyy-mm-dd-topic-name-location}\
 }
 
